@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+}
+
+.logo-header img {
+  height: 150px;
+}
+
+.btn-header {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition:
+    color 0.3s,
+    transform 0.2s;
+}
+
+.btn-header button:hover {
+  color: #ba0aba;
+}
+
+.mais {
+  display: flex;
+  gap: 15px;
+}
+
+.mais button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #444;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.mais button:hover {
+  color: #ba0aba;
+}
+
+.icon{
+    height: 70px;
+    width: 70px;
+    background-color: #ba0aba;
+    color: aliceblue;
+    border-radius: 50%;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    border: none;
+    z-index: 1000;
+}
