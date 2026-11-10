@@ -1,74 +1,245 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
 }
 
 .logo-header img {
-  height: 150px;
+    height: 150px;
 }
 
 .btn-header {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .btn-header button {
-  background: none;
-  border: none;
-  font-size: 20px;
-  font-weight: 500;
-  color: #333;
-  cursor: pointer;
-  padding: 8px 12px;
-  transition:
-    color 0.3s,
-    transform 0.2s;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #332462;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: color 0.3s, transform 0.2s;
 }
 
 .btn-header button:hover {
-  color: #ba0aba;
+    color: #f09836;
 }
 
 .mais {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .mais button {
-  background: none;
-  border: none;
-  font-size: 30px;
-  color: #444;
-  cursor: pointer;
-  padding: 8px;
-  border-radius: 50%;
-  transition:
-    background-color 0.3s,
-    color 0.3s;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #332462;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .mais button:hover {
-  color: #ba0aba;
+    color: #f09836;
 }
 
-.icon{
-    height: 70px;
-    width: 70px;
-    background-color: #ba0aba;
-    color: aliceblue;
-    border-radius: 50%;
-    font-size: 30px;
+[hidden] {
+    display: none !important;
+}
+
+.chat-apoio {
     position: fixed;
-    top: 0;
-    border: none;
+    right: 24px;
+    bottom: 24px;
     z-index: 1000;
+}
+
+.icon {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    border: 0;
+    border-radius: 50%;
+    background: #5d446c;
+    color: #f7ca88;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px #33246255;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icon:hover {
+    background: #332462;
+    color: #f09836;
+}
+
+.janela-chat {
+    position: absolute;
+    right: 0;
+    bottom: 72px;
+    width: min(360px, calc(100vw - 32px));
+    height: min(480px, calc(100vh - 120px));
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #f7ca88;
+    box-shadow: 0 8px 30px #33246244;
+}
+
+.chat-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: #332462;
+    color: #f7ca88;
+}
+
+.chat-cabecalho span {
+    display: block;
+    font-size: 13px;
+}
+
+.chat-fechar {
+    border: 0;
+    background: transparent;
+    color: #f7ca88;
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.chat-fechar:hover {
+    color: #f09836;
+}
+
+.chat-mensagens {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mensagem {
+    max-width: 85%;
+    padding: 10px 12px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.mensagem.bot {
+    align-self: flex-start;
+    background: #5d446c;
+    color: #f7ca88;
+}
+
+.mensagem.usuario {
+    align-self: flex-end;
+    background: #f09836;
+    color: #332462;
+}
+
+.chat-form {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    border-top: 1px solid #5d446c;
+}
+
+.chat-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #5d446c;
+    border-radius: 8px;
+    background: #f7ca88;
+    color: #332462;
+    font-size: 14px;
+}
+
+.chat-form input::placeholder {
+    color: #5d446c;
+}
+
+.chat-form input:focus {
+    outline: 2px solid #332462;
+}
+
+.chat-form button {
+    padding: 0 14px;
+    border: 0;
+    border-radius: 8px;
+    background: #332462;
+    color: #f7ca88;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.chat-form button:hover {
+    background: #5d446c;
+    color: #f09836;
+}
+
+.chat-form button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo-header img {
+        height: 90px;
+    }
+
+    .btn-header {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .btn-header button {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .mais {
+        gap: 5px;
+    }
+
+    .mais button {
+        font-size: 22px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
 }

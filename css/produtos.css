@@ -1,0 +1,134 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #332462;
+    background-color: #feedde;
+}
+
+.inicio-produtos {
+    position: relative;
+    width: 90%;
+    margin: 20px auto 0;
+}
+
+.titulo-produtos {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.titulo-produtos img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.titulo-produtos h1 {
+    color: #332462;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.titulo-produtos p {
+    margin-top: 4px;
+    color: #5d446c;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.pata-decorativa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.busca-produtos {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    max-width: 800px;
+    height: 55px;
+    margin: 25px 0 0 66px;
+    border: 2px solid #f7ca88;
+    border-radius: 35px;
+    background-color: #fffaf5;
+    overflow: hidden;
+}
+
+.busca-produtos input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #332462;
+    font-size: 16px;
+}
+
+.busca-produtos input::placeholder {
+    color: #5d446c;
+}
+
+.busca-produtos button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 55px;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+    background-color: #5d446c;
+    color: #fffaf5;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.busca-produtos button:hover {
+    background-color: #332462;
+    color: #f7ca88;
+}
+
+.busca-produtos:focus-within {
+    border-color: #5d446c;
+}
+
+@media (max-width: 768px) {
+    .inicio-produtos {
+        width: 94%;
+    }
+
+    .titulo-produtos img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .titulo-produtos h1 {
+        font-size: 26px;
+    }
+
+    .titulo-produtos p {
+        font-size: 14px;
+    }
+
+    .pata-decorativa {
+        width: 60px;
+        height: 60px;
+        opacity: 0.5;
+    }
+
+    .busca-produtos {
+        width: 100%;
+        margin: 25px 0 0;
+    }
+
+    .busca-produtos input {
+        font-size: 14px;
+    }
+}
