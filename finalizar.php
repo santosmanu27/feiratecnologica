@@ -52,8 +52,6 @@ if (empty($_SESSION['carrinho'])) {
         </a>
     </main>
 
-    <?php include('assets/componentes/footer.php'); ?>
-
     <div class="apoiodiv">
         <?php include('assets/componentes/apoio.php'); ?>
     </div>

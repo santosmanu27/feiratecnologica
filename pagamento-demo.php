@@ -335,8 +335,6 @@ if ($metodo === 'pix' && empty($_SESSION['qr_teste'])) {
         </section>
     </main>
 
-    <?php include('assets/componentes/footer.php'); ?>
-
     <div class="apoiodiv">
         <?php include('assets/componentes/apoio.php'); ?>
     </div>
