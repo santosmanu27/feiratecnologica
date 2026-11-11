@@ -1,0 +1,319 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #332462;
+    background-color: #feedde;
+}
+
+.pagina-atendimento {
+    width: 90%;
+    max-width: 1400px;
+    min-height: 550px;
+    margin: 30px auto 60px;
+}
+
+.titulo-atendimento {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.titulo-atendimento > i {
+    color: #5d446c;
+    font-size: 40px;
+}
+
+.titulo-atendimento h1 {
+    color: #332462;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.titulo-atendimento p {
+    margin-top: 5px;
+    color: #5d446c;
+    font-size: 17px;
+}
+
+.form-atendimento {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.9fr;
+    align-items: start;
+    gap: 35px;
+}
+
+.calendario {
+    padding: 22px;
+    border: 2px solid #f7ca88;
+    border-radius: 18px;
+    background-color: #fffaf5;
+}
+
+.calendario-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.calendario-topo h2 {
+    color: #332462;
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.calendario-topo button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #5d446c;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calendario-topo button:hover:not(:disabled) {
+    background-color: #f7ca88;
+}
+
+.calendario-topo button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.dias-semana,
+.dias-calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.dias-semana {
+    margin-bottom: 10px;
+    color: #5d446c;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.dia {
+    aspect-ratio: 1;
+    width: 100%;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: #332462;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dia:hover:not(:disabled) {
+    background-color: #f7ca88;
+}
+
+.dia.selecionado {
+    background-color: #5d446c;
+    color: #fffaf5;
+}
+
+.dia:disabled {
+    color: #b9a9ae;
+    cursor: not-allowed;
+}
+
+.escolha-horario h2 {
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.horarios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.horarios input {
+    position: absolute;
+    opacity: 0;
+}
+
+.horarios span {
+    display: block;
+    padding: 12px 8px;
+    border: 2px solid #f7ca88;
+    border-radius: 25px;
+    background-color: #fffaf5;
+    color: #332462;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.horarios span:hover {
+    background-color: #f7ca88;
+}
+
+.horarios input:checked + span {
+    border-color: #5d446c;
+    background-color: #5d446c;
+    color: #fffaf5;
+}
+
+.horarios input:focus-visible + span {
+    outline: 3px solid #332462;
+    outline-offset: 2px;
+}
+
+.btn-confirmar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f09836;
+    color: #332462;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-confirmar:hover {
+    background-color: #5d446c;
+    color: #feedde;
+}
+
+.aviso-agendamento {
+    margin-top: 15px;
+    color: #5d446c;
+    font-size: 13px;
+}
+
+.imagem-atendimento {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-self: end;
+}
+
+.imagem-atendimento img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    max-height: 450px;
+    object-fit: contain;
+}
+
+.pagina-confirmacao {
+    width: 90%;
+    max-width: 900px;
+    min-height: 500px;
+    margin: 30px auto 60px;
+    text-align: center;
+}
+
+.icone-confirmacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background-color: #5d446c;
+    color: #feedde;
+    font-size: 48px;
+}
+
+.pagina-confirmacao h1 {
+    color: #332462;
+    font-size: 38px;
+}
+
+.pagina-confirmacao > p {
+    margin-top: 15px;
+    color: #5d446c;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.resumo-atendimento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #f7ca88;
+    font-weight: 700;
+}
+
+.resumo-atendimento span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .form-atendimento {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagem-atendimento {
+        grid-column: 1 / -1;
+    }
+
+    .imagem-atendimento img {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .pagina-atendimento {
+        width: 94%;
+    }
+
+    .titulo-atendimento h1 {
+        font-size: 26px;
+    }
+
+    .titulo-atendimento > i {
+        font-size: 30px;
+    }
+
+    .titulo-atendimento p {
+        font-size: 14px;
+    }
+
+    .form-atendimento {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .imagem-atendimento {
+        grid-column: auto;
+    }
+
+    .pagina-confirmacao h1 {
+        font-size: 28px;
+    }
+
+    .resumo-atendimento {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        border-radius: 25px;
+    }
+}

@@ -1,3 +1,5 @@
+<?php require_once 'assets/componentes/sessao.php'; ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 

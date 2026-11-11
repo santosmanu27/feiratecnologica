@@ -206,6 +206,166 @@ header {
     cursor: wait;
 }
 
+.footer {
+    position: relative;
+    margin-top: 70px;
+    padding: 60px 5% 35px;
+    overflow: hidden;
+    background-color: #5d446c;
+    color: #feedde;
+}
+
+.footer-conteudo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-marca {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-marca img {
+    width: 170px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-marca-texto h2 {
+    color: #feedde;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.footer-marca-texto h2 span {
+    color: #f09836;
+}
+
+.footer-marca-texto p {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.footer-links,
+.footer-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links h3,
+.footer-contato h3 {
+    margin-bottom: 10px;
+    color: #feedde;
+    font-size: 18px;
+}
+
+.footer-links a {
+    margin-bottom: 5px;
+    color: #feedde;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f09836;
+}
+
+.footer-contato p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 9px;
+    font-size: 15px;
+}
+
+.footer-contato p i {
+    width: 18px;
+    text-align: center;
+}
+
+.footer-redes {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.footer-pata {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 50px;
+        padding: 55px 7% 30px;
+        border-radius: 18% 35% 5% 5% / 12% 10% 3% 3%;
+    }
+
+    .footer-conteudo {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .footer-marca {
+        width: 100%;
+    }
+
+    .footer-marca img {
+        width: 120px;
+    }
+
+    .footer-marca-texto h2 {
+        font-size: 24px;
+    }
+
+    .footer-links,
+    .footer-contato {
+        flex: 1 1 150px;
+    }
+
+    .footer-pata {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.mais .carrinho {
+    position: relative;
+}
+
+.contador-carrinho {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 5px;
+    border-radius: 50%;
+    background-color: #f09836;
+    color: #332462;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1;
+}
+
 @media (max-width: 768px) {
     header {
         flex-wrap: wrap;

@@ -1,3 +1,13 @@
+<?php
+
+$quantidadeCarrinho = 0;
+
+foreach ($_SESSION['carrinho'] as $quantidadeItem) {
+    $quantidadeCarrinho += (int) $quantidadeItem;
+}
+
+?>
+
 <header>
     <div class="logo-header">
         <img src="assets/images/logo.png" alt="AuraPet">
@@ -22,15 +32,39 @@
     </nav>
 
     <div class="mais">
-        <button type="button" class="pesquisar" title="Pesquisar" aria-label="Pesquisar" onclick="window.location.href='produtos.php#busca'">
+        <button
+            type="button"
+            class="pesquisar"
+            title="Pesquisar"
+            aria-label="Pesquisar"
+            onclick="window.location.href='produtos.php#busca'"
+        >
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
 
-        <button type="button" class="carrinho" title="Carrinho" aria-label="Carrinho" onclick="window.location.href='carrinho.php'">
+        <button
+            type="button"
+            class="carrinho"
+            title="Carrinho"
+            aria-label="Carrinho: <?= $quantidadeCarrinho ?> itens"
+            onclick="window.location.href='carrinho.php'"
+        >
             <i class="fa-solid fa-cart-shopping"></i>
+
+            <?php if ($quantidadeCarrinho > 0): ?>
+                <span class="contador-carrinho">
+                    <?= $quantidadeCarrinho ?>
+                </span>
+            <?php endif; ?>
         </button>
 
-        <button type="button" class="conta" title="Minha Conta" aria-label="Minha Conta" onclick="window.location.href='conta.php'">
+        <button
+            type="button"
+            class="conta"
+            title="Minha Conta"
+            aria-label="Minha Conta"
+            onclick="window.location.href='conta.php'"
+        >
             <i class="fa-solid fa-user"></i>
         </button>
     </div>

@@ -20,9 +20,10 @@ body {
 
 .animais img {
     position: absolute;
-    bottom: 0;
-    right: 25px;
-    width: min(50%, 800px);
+    z-index: 1;
+    bottom: -60px;
+    right: 50px;
+    width: min(70%, 1150px);
     height: auto;
 }
 

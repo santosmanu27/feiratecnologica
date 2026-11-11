@@ -1,0 +1,199 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #332462;
+    background-color: #feedde;
+}
+
+.pagina-contato {
+    width: 90%;
+    max-width: 1400px;
+    margin: 30px auto 70px;
+}
+
+.titulo-contato {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 35px;
+}
+
+.titulo-contato img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.titulo-contato h1 {
+    color: #332462;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.titulo-contato p {
+    margin-top: 5px;
+    color: #5d446c;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.contato-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.informacoes-contato,
+.contato-destaque {
+    padding: 35px;
+    border: 2px solid #f7ca88;
+    border-radius: 24px;
+    background-color: #fffaf5;
+}
+
+.informacoes-contato h2,
+.contato-destaque h2 {
+    color: #332462;
+    font-size: 26px;
+}
+
+.contato-introducao {
+    max-width: 500px;
+    margin: 12px 0 25px;
+    color: #5d446c;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.contato-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #f7ca88;
+    color: #5d446c;
+    font-size: 23px;
+}
+
+.contato-item h3 {
+    color: #332462;
+    font-size: 17px;
+}
+
+.contato-item p {
+    margin-top: 4px;
+    color: #5d446c;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.contato-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7ca88;
+    text-align: center;
+}
+
+.imagem-contato {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.contato-destaque p {
+    max-width: 400px;
+    margin-top: 12px;
+    color: #5d446c;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contato-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn-contato {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 22px;
+    border: 2px solid #f09836;
+    border-radius: 30px;
+    background-color: #f09836;
+    color: #332462;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-contato:hover {
+    border-color: #5d446c;
+    background-color: #5d446c;
+    color: #feedde;
+}
+
+.btn-secundario {
+    border-color: #5d446c;
+    background-color: transparent;
+    color: #332462;
+}
+
+.btn-secundario:hover {
+    background-color: #5d446c;
+    color: #feedde;
+}
+
+@media (max-width: 768px) {
+    .pagina-contato {
+        width: 94%;
+    }
+
+    .titulo-contato img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .titulo-contato h1 {
+        font-size: 28px;
+    }
+
+    .titulo-contato p {
+        font-size: 15px;
+    }
+
+    .contato-conteudo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .informacoes-contato,
+    .contato-destaque {
+        padding: 25px;
+    }
+
+    .imagem-contato {
+        height: 180px;
+    }
+}
