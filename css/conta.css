@@ -1,0 +1,272 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #332462;
+    background-color: #feedde;
+    background-image: url('../assets/images/bg-conta.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+}
+
+.pagina-conta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8%;
+    width: 90%;
+    max-width: 1400px;
+    min-height: calc(100vh - 180px);
+    margin: 0 auto;
+}
+
+.apresentacao-conta {
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+.apresentacao-texto {
+    position: relative;
+    z-index: 1;
+    padding: 35px 0 0 12%;
+}
+
+.apresentacao-texto h1 {
+    color: #332462;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.apresentacao-texto p {
+    margin-top: 18px;
+    color: #5d446c;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.animais-conta {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    margin-top: 20px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.cartao-conta {
+    width: 100%;
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 35px;
+    border: 2px solid #f7ca88;
+    border-radius: 25px;
+    background-color: #fffaf5;
+}
+
+.cartao-conta h2,
+.cartao-perfil h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+    color: #332462;
+    font-size: 30px;
+}
+
+.cartao-conta h2 i,
+.cartao-perfil h1 i {
+    color: #5d446c;
+}
+
+.form-conta {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-conta label span {
+    display: block;
+    margin-bottom: 5px;
+    color: #5d446c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-conta input:not([type="hidden"]) {
+    width: 100%;
+    padding: 13px 15px;
+    border: 2px solid #e4cdd5;
+    border-radius: 12px;
+    outline: none;
+    background-color: #fffaf5;
+    color: #332462;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.form-conta input:focus {
+    border-color: #5d446c;
+}
+
+.form-conta input::placeholder {
+    color: #5d446c;
+    opacity: 0.8;
+}
+
+.btn-conta {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f09836;
+    color: #332462;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-conta:hover {
+    background-color: #5d446c;
+    color: #feedde;
+}
+
+.alternar-conta {
+    margin-top: 22px;
+    color: #5d446c;
+    font-size: 14px;
+    text-align: center;
+}
+
+.alternar-conta a {
+    color: #332462;
+    font-weight: 700;
+}
+
+.alternar-conta a:hover {
+    color: #f09836;
+}
+
+.mensagem-erro {
+    margin-bottom: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #f7ca88;
+    color: #332462;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.pagina-perfil {
+    display: flex;
+    justify-content: center;
+}
+
+.cartao-perfil {
+    margin: 40px auto;
+}
+
+.perfil-boas-vindas {
+    margin-bottom: 20px;
+    color: #5d446c;
+    font-size: 18px;
+}
+
+.perfil-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.perfil-dados div {
+    padding: 12px 15px;
+    border-radius: 12px;
+    background-color: #feedde;
+    overflow-wrap: anywhere;
+}
+
+.perfil-dados strong {
+    color: #5d446c;
+    font-size: 14px;
+}
+
+.perfil-dados p {
+    margin-top: 4px;
+}
+
+.btn-sair {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    border: 2px solid #5d446c;
+    border-radius: 30px;
+    background: transparent;
+    color: #5d446c;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-sair:hover {
+    background-color: #5d446c;
+    color: #feedde;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .pagina-conta {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 94%;
+        min-height: auto;
+    }
+
+    .apresentacao-conta {
+        min-height: auto;
+    }
+
+    .apresentacao-texto {
+        padding: 30px 0 0;
+        text-align: center;
+    }
+
+    .apresentacao-texto h1 {
+        font-size: 34px;
+    }
+
+    .apresentacao-texto p {
+        font-size: 16px;
+    }
+
+    .animais-conta {
+        max-height: 250px;
+    }
+
+    .cartao-conta {
+        margin: 0 auto 40px;
+        padding: 25px;
+    }
+
+    .pagina-perfil {
+        display: flex;
+    }
+
+    .cartao-perfil {
+        margin: 30px auto;
+    }
+}

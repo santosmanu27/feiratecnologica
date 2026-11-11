@@ -9,7 +9,7 @@ $produtos = [
         'categorias' => 'caes',
         'imagem' => 'produto-caes.png',
         'imagens_extras' => [],
-        'descricao' => 'Adicione aqui a descrição da ração para cães.'
+        'descricao' => 'aaaa'
     ],
     'racao-gatos' => [
         'nome' => 'Ração para Gatos',
@@ -19,7 +19,7 @@ $produtos = [
         'categorias' => 'gatos',
         'imagem' => 'produto-gatos.png',
         'imagens_extras' => [],
-        'descricao' => 'Adicione aqui a descrição da ração para gatos.'
+        'descricao' => 'aaaaa'
     ],
     'produto-higiene' => [
         'nome' => 'Produto de Higiene',
@@ -29,7 +29,7 @@ $produtos = [
         'categorias' => 'higiene caes gatos',
         'imagem' => 'produto-higiene.png',
         'imagens_extras' => [],
-        'descricao' => 'Adicione aqui a descrição do produto de higiene.'
+        'descricao' => 'aaaaa'
     ],
     'brinquedo-pet' => [
         'nome' => 'Brinquedo para Pet',
@@ -39,7 +39,7 @@ $produtos = [
         'categorias' => 'brinquedos caes',
         'imagem' => 'produto-brinquedo.png',
         'imagens_extras' => [],
-        'descricao' => 'Adicione aqui a descrição do brinquedo.'
+        'descricao' => 'aaaaaa'
     ],
     'acessorio-pet' => [
         'nome' => 'Acessório para Pet',
@@ -49,6 +49,6 @@ $produtos = [
         'categorias' => 'acessorios caes gatos',
         'imagem' => 'produto-acessorio.png',
         'imagens_extras' => [],
-        'descricao' => 'Adicione aqui a descrição do acessório.'
+        'descricao' => 'aaaaaa'
     ]
 ];

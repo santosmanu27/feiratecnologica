@@ -1,0 +1,457 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #332462;
+    background-color: #feedde;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+}
+
+.fundo-cadastro {
+    background-image: url('../assets/images/bg-conta.png');
+}
+
+.fundo-pagamento {
+    background-image: url('../assets/images/bg-pagamento.png');
+}
+
+.fundo-obrigado {
+    background-image: url('../assets/images/obrigado.png');
+}
+
+.checkout {
+    width: 90%;
+    max-width: 1300px;
+    min-height: 60vh;
+    margin: 30px auto 65px;
+}
+
+.checkout h1 {
+    font-size: 36px;
+}
+
+.aviso {
+    margin: 12px 0;
+    color: #5d446c;
+    line-height: 1.5;
+}
+
+.etapas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    font-weight: 700;
+}
+
+.etapas span {
+    flex: 1;
+    padding: 10px 15px;
+    border-bottom: 2px solid #5d446c;
+    color: #5d446c;
+    text-align: center;
+}
+
+.etapas .ativa {
+    border-color: #f09836;
+    color: #332462;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "endereco pagamento"
+        "resumo pagamento";
+    align-items: start;
+    gap: 20px;
+}
+
+.endereco {
+    grid-area: endereco;
+}
+
+.pagamento {
+    grid-area: pagamento;
+}
+
+.resumo {
+    grid-area: resumo;
+}
+
+.cartao {
+    padding: 25px;
+    border: 2px solid #f7ca88;
+    border-radius: 20px;
+    background-color: #fffaf5;
+}
+
+.cartao h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #332462;
+    font-size: 22px;
+}
+
+.cartao h2 i {
+    color: #5d446c;
+}
+
+.cartao h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.campos label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.campos input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #d9c5ce;
+    border-radius: 10px;
+    background-color: #fffaf5;
+    color: #332462;
+    font-size: 15px;
+}
+
+.campos input:focus {
+    outline: 2px solid #5d446c;
+}
+
+.opcao {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid #f7ca88;
+    cursor: pointer;
+}
+
+.opcao input {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: #5d446c;
+}
+
+.opcao-conteudo {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: #332462;
+}
+
+.bandeiras-pagamento {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.bandeiras-pagamento img {
+    width: 48px;
+    height: 28px;
+    padding: 3px;
+    border-radius: 4px;
+    background-color: #fff;
+    object-fit: contain;
+}
+
+.logo-metodo {
+    width: 65px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.icone-metodo {
+    color: #5d446c;
+    font-size: 24px;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 23px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f09836;
+    color: #332462;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao:hover {
+    background-color: #5d446c;
+    color: #feedde;
+}
+
+.pagamento .botao {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 22px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 12px 0;
+}
+
+.item img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #feedde;
+    object-fit: contain;
+}
+
+.item span {
+    flex: 1;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 14px;
+    border-radius: 12px;
+    background-color: #eadde8;
+}
+
+.erro {
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #f7ca88;
+}
+
+.voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    color: #332462;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    color: #f09836;
+}
+
+.cartao-demo {
+    width: 60%;
+    max-width: 760px;
+}
+
+.cartao-demo p {
+    margin: 18px 0;
+    line-height: 1.5;
+}
+
+.pagamento-cartao-titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f7ca88;
+}
+
+.pagamento-cartao-titulo i {
+    color: #5d446c;
+    font-size: 28px;
+}
+
+.pagamento-cartao-titulo h2 {
+    margin: 0;
+    color: #332462;
+    font-size: 24px;
+}
+
+.cartao-campos-visuais {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.cartao-campos-visuais label,
+.selecionar-cartao label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #332462;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cartao-campos-visuais input,
+.selecionar-cartao select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #e4cdd5;
+    border-radius: 10px;
+    background-color: #fffaf5;
+    color: #332462;
+    font-size: 15px;
+}
+
+.cartao-campos-visuais input:disabled {
+    opacity: 1;
+}
+
+.cartao-campos-visuais input::placeholder {
+    color: #5d446c;
+}
+
+.cartao-campos-linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.selecionar-cartao {
+    margin-top: 20px;
+}
+
+.selecionar-cartao select {
+    margin-top: 8px;
+}
+
+.confirmar-pagamento {
+    width: 100%;
+    min-height: 52px;
+    margin-top: 22px;
+}
+
+.adicionar-cartao {
+    margin-top: 20px;
+}
+
+.adicionar-cartao summary {
+    color: #5d446c;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gerenciar-cartoes {
+    display: inline-block;
+    margin-top: 15px;
+    color: #5d446c;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.gerenciar-cartoes:hover {
+    color: #f09836;
+}
+
+.conclusao {
+    padding-left: 40%;
+    text-align: center;
+}
+
+.check {
+    display: grid;
+    place-items: center;
+    width: 90px;
+    height: 90px;
+    margin: 15px auto 25px;
+    border-radius: 50%;
+    background-color: #5d446c;
+    color: #fffaf5;
+    font-size: 42px;
+}
+
+.conclusao p {
+    margin-top: 15px;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.secundario {
+    border: 2px solid #5d446c;
+    background-color: #fffaf5;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .checkout {
+        width: 94%;
+    }
+
+    .checkout h1 {
+        font-size: 28px;
+    }
+
+    .etapas {
+        gap: 8px;
+    }
+
+    .etapas span {
+        padding: 8px 4px;
+        font-size: 12px;
+    }
+
+    .checkout-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "endereco"
+            "resumo"
+            "pagamento";
+    }
+
+    .cartao-demo {
+        width: 100%;
+    }
+
+    .conclusao {
+        padding: 25px;
+        border-radius: 20px;
+        background-color: #fffaf5;
+    }
+}
+
+@media (max-width: 480px) {
+    .campos {
+        grid-template-columns: 1fr;
+    }
+}

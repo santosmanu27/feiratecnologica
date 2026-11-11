@@ -403,3 +403,26 @@ header {
         font-size: 22px;
     }
 }
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #5d446c #feedde;
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #feedde;
+}
+
+html::-webkit-scrollbar-thumb {
+    border: 3px solid #feedde;
+    border-radius: 20px;
+    background-color: #5d446c;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #f09836;
+}

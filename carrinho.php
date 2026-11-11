@@ -10,9 +10,15 @@ function escapar($valor) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $token = $_POST['csrf_token'] ?? '';
 
-    if (!is_string($token) || !hash_equals($_SESSION['csrf_token'], $token)) {
+    if (
+        !is_string($token) ||
+        !hash_equals($_SESSION['csrf_token'], $token)
+    ) {
         http_response_code(403);
-        exit('Não foi possível validar a solicitação. Atualize a página e tente novamente.');
+
+        exit(
+            'Não foi possível validar a solicitação. Atualize a página e tente novamente.'
+        );
     }
 
     $acao = $_POST['acao'] ?? '';
@@ -29,10 +35,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 FILTER_VALIDATE_INT
             );
 
-            if ($quantidade !== false && $quantidade >= 1 && $quantidade <= 99) {
+            if (
+                $quantidade !== false &&
+                $quantidade >= 1 &&
+                $quantidade <= 99
+            ) {
                 if ($acao === 'adicionar') {
                     $atual = (int) ($_SESSION['carrinho'][$id] ?? 0);
-                    $_SESSION['carrinho'][$id] = min(99, $atual + $quantidade);
+
+                    $_SESSION['carrinho'][$id] = min(
+                        99,
+                        $atual + $quantidade
+                    );
                 } elseif (isset($_SESSION['carrinho'][$id])) {
                     $_SESSION['carrinho'][$id] = $quantidade;
                 }
@@ -104,7 +118,10 @@ foreach ($_SESSION['carrinho'] as $id => $quantidade) {
                 <i class="fa-solid fa-bag-shopping"></i>
 
                 <h2>Seu carrinho está vazio</h2>
-                <p>Que tal encontrar algo especial para seu pet?</p>
+
+                <p>
+                    Que tal encontrar algo especial para seu pet?
+                </p>
 
                 <a href="produtos.php" class="btn-carrinho-principal">
                     Ver produtos
@@ -151,7 +168,11 @@ foreach ($_SESSION['carrinho'] as $id => $quantidade) {
                                             value="<?= escapar($_SESSION['csrf_token']) ?>"
                                         >
 
-                                        <input type="hidden" name="acao" value="atualizar">
+                                        <input
+                                            type="hidden"
+                                            name="acao"
+                                            value="atualizar"
+                                        >
 
                                         <input
                                             type="hidden"
@@ -184,7 +205,11 @@ foreach ($_SESSION['carrinho'] as $id => $quantidade) {
                                             value="<?= escapar($_SESSION['csrf_token']) ?>"
                                         >
 
-                                        <input type="hidden" name="acao" value="remover">
+                                        <input
+                                            type="hidden"
+                                            name="acao"
+                                            value="remover"
+                                        >
 
                                         <input
                                             type="hidden"
@@ -226,7 +251,7 @@ foreach ($_SESSION['carrinho'] as $id => $quantidade) {
                         Frete e pagamento ainda não estão disponíveis.
                     </p>
 
-                    <a href="finalizar.php" class="btn-carrinho-principal">
+                    <a href="checkout.php" class="btn-carrinho-principal">
                         Finalizar compra
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>

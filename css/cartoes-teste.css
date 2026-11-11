@@ -1,0 +1,76 @@
+.form-cartao-teste {
+    display: grid;
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.form-cartao-teste label {
+    display: grid;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-cartao-teste input,
+.form-cartao-teste select {
+    padding: 10px;
+    border: 1px solid #d9c5ce;
+    border-radius: 10px;
+    background-color: #fffaf5;
+    color: #332462;
+}
+
+.form-cartao-teste .botao {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f09836;
+    color: #332462;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-cartao-teste .botao:hover {
+    background-color: #5d446c;
+    color: #feedde;
+}
+
+.cartao-opcao {
+    display: block;
+    margin: 12px 0;
+    padding: 12px;
+    border: 1px solid #f7ca88;
+    border-radius: 12px;
+}
+
+.cartao-demo details {
+    margin: 22px 0;
+}
+
+.cartao-demo summary,
+.cartao-salvo summary {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#qrcode {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #fff;
+}
+
+#qrcode img {
+    display: block;
+}
+
+.cartao-salvo {
+    margin: 12px 0;
+    padding: 15px;
+    border: 1px solid #f7ca88;
+    border-radius: 12px;
+}
+
+.cartao-salvo form button {
+    margin-top: 8px;
+}
