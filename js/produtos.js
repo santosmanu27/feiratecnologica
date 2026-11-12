@@ -14,7 +14,8 @@
         'gatos',
         'higiene',
         'brinquedos',
-        'acessorios'
+        'acessorios',
+        'nossos produtos'
     ];
 
     let tipoAtual = 'todos';

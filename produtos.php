@@ -119,6 +119,12 @@ function escapar($valor) {
                         <i class="fa-solid fa-paw"></i>
                         Acessórios
                     </button>
+
+                    <button type="button" class="categoria-filtro" data-categoria="nossos produtos">
+                        <i class="fa-solid fa-paw"></i>
+                        Nossos produtos
+                    </button>
+
                 </aside>
 
                 <div class="produtos-lista" id="produtos-lista">
