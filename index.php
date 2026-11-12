@@ -89,7 +89,7 @@
             <div class="categorias-lista">
                 <a href="produtos.php?categoria=caes" class="categoria">
                     <div class="categoria-imagem">
-                        <img src="assets/images/dog.jpg" alt="Cães">
+                        <img src="assets/images/dog.png" alt="Cães">
                     </div>
                     <div class="categoria-nome">
                         Cães
@@ -98,7 +98,7 @@
 
                 <a href="produtos.php?categoria=gatos" class="categoria">
                     <div class="categoria-imagem">
-                        <img src="assets/images/" alt="Gatos">
+                        <img src="assets/images/gato.png" alt="Gatos">
                     </div>
                     <div class="categoria-nome">
                         Gatos
@@ -107,7 +107,7 @@
 
                 <a href="produtos.php?categoria=higiene" class="categoria">
                     <div class="categoria-imagem">
-                        <img src="assets/images/" alt="Produtos de higiene">
+                        <img src="assets/images/higiene.png" alt="Produtos de higiene">
                     </div>
                     <div class="categoria-nome">
                         Higiene
@@ -116,7 +116,7 @@
 
                 <a href="produtos.php?categoria=brinquedos" class="categoria">
                     <div class="categoria-imagem">
-                        <img src="assets/images/" alt="Brinquedos para pets">
+                        <img src="assets/images/brinquedos.png" alt="Brinquedos para pets">
                     </div>
                     <div class="categoria-nome">
                         Brinquedos

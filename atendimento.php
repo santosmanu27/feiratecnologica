@@ -59,34 +59,49 @@
                 <h2>Horários disponíveis</h2>
 
                 <div class="horarios">
+                     <label>
+                        <input type="radio" name="horario" value="08:00"required>
+                        <span>08:00</span>
+                    </label>
+                
                     <label>
-                        <input type="radio" name="horario" value="09:00" required>
+                        <input type="radio" name="horario" value="09:00"required>
                         <span>09:00</span>
                     </label>
 
                     <label>
-                        <input type="radio" name="horario" value="10:00">
+                        <input type="radio" name="horario" value="10:00"required>
                         <span>10:00</span>
                     </label>
 
                     <label>
-                        <input type="radio" name="horario" value="11:00">
+                        <input type="radio" name="horario" value="11:00"required>
                         <span>11:00</span>
                     </label>
 
                     <label>
-                        <input type="radio" name="horario" value="14:00">
+                        <input type="radio" name="horario" value="13:00"required>
+                        <span>13:00</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="horario" value="14:00"required>
                         <span>14:00</span>
                     </label>
 
                     <label>
-                        <input type="radio" name="horario" value="15:00">
+                        <input type="radio" name="horario" value="15:00"required>
                         <span>15:00</span>
                     </label>
 
                     <label>
-                        <input type="radio" name="horario" value="16:00">
+                        <input type="radio" name="horario" value="16:00"required>
                         <span>16:00</span>
+                    </label>
+
+                     <label>
+                        <input type="radio" name="horario" value="17:00"required>
+                        <span>17:00</span>
                     </label>
                 </div>
 

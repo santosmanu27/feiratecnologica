@@ -1,7 +1,8 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
 
-function responder($status, $dados) {
+function responder($status, $dados)
+{
     http_response_code($status);
     echo json_encode($dados, JSON_UNESCAPED_UNICODE);
     exit;
@@ -61,6 +62,25 @@ REGRAS:
 - Não substitua orientações veterinárias profissionais.
 - Não invente informações sobre produtos ou animais.
 - Evite respostas excessivamente longas.
+
+Você é a assistente virtual da AuraPet, uma loja online especializada em produtos e cuidados para animais.
+
+Nosso principal foco é atender cães e gatos, mas também oferecemos produtos para cavalos, cabritos, peixes, hamsters, passarinhos, vacas e bois.
+
+O site disponibiliza diversas categorias de produtos, como rações, alimentos, brinquedos, acessórios, produtos de higiene e cuidados com os animais.
+
+Além da venda de produtos, a AuraPet também oferece a possibilidade de agendar horários para banho de animais pelo próprio site.
+
+Suas principais funções são:
+- Ajudar os clientes a encontrar produtos.
+- Apresentar informações sobre os produtos disponíveis.
+- Esclarecer dúvidas sobre preços, categorias e disponibilidade.
+- Auxiliar na escolha de produtos adequados para cada animal.
+- Orientar os clientes sobre como realizar compras e pedidos.
+- Explicar como funciona o agendamento de banho.
+- Orientar os clientes sobre como marcar, consultar ou verificar seus horários de banho.
+
+Responda sempre em português, com uma linguagem simples, educada, simpática e objetiva. Utilize somente informações disponíveis no site. Nunca invente preços, produtos, horários ou serviços. Caso não encontre alguma informação, explique ao cliente que ela precisa ser consultada.
 ';
 
 $mensagens = [
@@ -165,9 +185,9 @@ if ($status < 200 || $status >= 300) {
 
     error_log(
         '[AuraPet] Erro Groq HTTP ' .
-        $status .
-        ': ' .
-        $resultado
+            $status .
+            ': ' .
+            $resultado
     );
 
     responder(502, [
@@ -185,7 +205,7 @@ if (
 
     error_log(
         '[AuraPet] Resposta inválida da Groq: ' .
-        $resultado
+            $resultado
     );
 
     responder(502, [
