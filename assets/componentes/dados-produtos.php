@@ -20,7 +20,7 @@ $produtos = [
         'preco' => 4.00,
         'tipo' => 'petiscos',
         'categorias' => 'caes',
-        'imagem' => '',
+        'imagem' => 'assets/images/Petiscão bifinho.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Petisco Petiscão, para cachorro, sabor carne'
     ],
@@ -31,7 +31,7 @@ $produtos = [
         'preco' => 110.00,
         'tipo' => 'racao',
         'categorias' => 'caes',
-        'imagem' => '',
+        'imagem' => 'assets/images/Special Dog.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Ração Special Dog, 15kg, para cachorro adulto, sabor carne'
     ],
@@ -42,7 +42,7 @@ $produtos = [
         'preco' => 120.00,
         'tipo' => 'racao',
         'categorias' => 'caes',
-        'imagem' => '',
+        'imagem' => 'assets/images/Golden.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Ração GoldeN Special, 15kg, para cachorro adulto, sabor frango e carne'
     ],
@@ -53,7 +53,7 @@ $produtos = [
         'preco' => 150.00,
         'tipo' => 'racao',
         'categorias' => 'caes',
-        'imagem' => '',
+        'imagem' => 'assets/images/PremieR.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Ração PremieR, 12kg, pra cachorro de porte pequeno adulto, sabor frango e salmão'
     ],
@@ -64,7 +64,7 @@ $produtos = [
         'preco' => 4.50,
         'tipo' => 'petiscos',
         'categorias' => 'gatos',
-        'imagem' => '',
+        'imagem' => 'assets/images/Dreamies.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Petisco Dreamies, para gatos, sabor frango'
     ],
@@ -86,7 +86,7 @@ $produtos = [
         'preco' => 125.00,
         'tipo' => 'racao',
         'categorias' => 'gatos',
-        'imagem' => '',
+        'imagem' => 'assets/images/Golden gatos.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Ração GoldeN, 10kg, para gatos adulto, sabor carne'
     ],
@@ -97,7 +97,7 @@ $produtos = [
         'preco' => 170.00,
         'tipo' => 'racao',
         'categorias' => 'gatos',
-        'imagem' => '',
+        'imagem' => 'assets/images/Golden gatos.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Ração GoldeN, 10kg, para gatos castrados, sabor salmão'
     ],
