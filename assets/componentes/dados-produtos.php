@@ -1,7 +1,7 @@
 <?php
 
 $produtos = [
-    'racao-caes' => [
+     'racao-caes' => [
         'nome' => 'Petisco',
         'marca' => 'Pedigree',
         'preco' => 6.50,
@@ -11,7 +11,7 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Petisco Pedigree, para cachorro, adulto raças pequenas, sabor carne ao molho '
     ],
-    'racao-cao' => [
+     'racao-caes1' => [
         'nome' => 'Petisco',
         'marca' => 'Petiscão',
         'preco' => 4.00,
@@ -21,7 +21,7 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Petisco Petiscão, para cachorro, sabor carne'
     ],
-     'racao-caes' => [
+     'racao-caes2' => [
         'nome' => 'Ração',
         'marca' => 'Special Dog',
         'preco' => 110.00,
@@ -31,7 +31,7 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Ração Special Dog, 15kg, para cachorro adulto, sabor carne'
     ],
-     'racao-caes' => [
+     'racao-caes3' => [
         'nome' => 'Ração',
         'marca' => 'GoldeN Special',
         'preco' => 120.00,
@@ -41,7 +41,7 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Ração GoldeN Special, 15kg, para cachorro adulto, sabor frango e carne'
     ],
-     'racao-caes' => [
+     'racao-caes4' => [
         'nome' => 'Ração',
         'marca' => 'PremieR',
         'preco' => 150.00,
@@ -51,117 +51,170 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Ração PremieR, 12kg, pra cachorro de porte pequeno adulto, sabor frango e salmão'
     ],
-
-
-
-
-
-
-
-
-     'produto-higiene' => [
+     'racao-gato5' => [
+        'nome' => 'Petisco',
+        'marca' => 'Dreamies',
+        'preco' => 4.50,
+        'tipo' => 'racao',
+        'categorias' => 'gato',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Petisco Dreamies, para gatos, sabor frango'
+    ],
+     'racao-gato6' => [
+        'nome' => 'Petisco',
+        'marca' => 'Quatree',
+        'preco' => 5.50,
+        'tipo' => 'racao',
+        'categorias' => 'gato',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Petisco Quatree, Snacks, para gatos, sabor salmão'
+    ],
+     'racao-gato7' => [
+        'nome' => 'Ração',
+        'marca' => 'GoldeN',
+        'preco' => 125.00,
+        'tipo' => 'racao',
+        'categorias' => 'gato',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Ração GoldeN, 10kg, para gatos adulto, sabor carne'
+    ],
+     'racao-gato8' => [
+        'nome' => 'Ração',
+        'marca' => 'GoldeN',
+        'preco' => 170.00,
+        'tipo' => 'racao',
+        'categorias' => 'gato',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Ração GoldeN, 10kg, para gatos castrados, sabor salmão '
+    ],
+     'racao-gato9' => [
+        'nome' => 'Ração',
+        'marca' => 'Special Cad',
+        'preco' => 130.00,
+        'tipo' => 'racao',
+        'categorias' => 'gato',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Ração Special Cad, 15kg, para gatos adultos, sabor carne'
+    ],
+     'produto-higiene1' => [
         'nome' => 'Shampoo',
         'marca' => 'Sanol dog',
         'preco' => 20.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => 'produto-higiene.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
         'descricao' => 'Shampoo Sanol dog, 500ml, para cachorro pelos escuro'
     ],
-     'produto-higiene' => [
+     'produto-higiene2' => [
         'nome' => 'Shampoo',
         'marca' => 'Sanol dog',
         'preco' => 30.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => 'produto-higiene.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
         'descricao' => 'Shampoo Sanol dog, 500ml, para cães e gatos de pele sensível '
     ],
-    'produto-higiene' => [
-        'nome' => 'Shampoo',
+     'produto-higiene3' => [
+        'nome' => 'Condicionador',
         'marca' => 'Sanol dog',
         'preco' => 20.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => 'produto-higiene.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
         'descricao' => 'Condicionador Sanol dog, 500ml, para cães e gatos, neutro'
     ],
-     'produto-higiene' => [
+     'produto-higiene4' => [
         'nome' => 'Banho a seco',
         'marca' => 'PetClean',
         'preco' => 35.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => 'produto-higiene.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
         'descricao' => 'Banho a seco PetClean, 240ml, para cães e gatos'
     ],
-     'produto-higiene' => [
+     'produto-higiene5' => [
         'nome' => 'Tapetes higiênicos',
         'marca' => 'Mr. Dry',
         'preco' => 70.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => 'produto-higiene.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
         'descricao' => 'Tapetes higiênicos Mr. Dry, 30 unidades '
     ],
-     'produto-higiene' => [
+     'produto-higiene6' => [
         'nome' => 'Escova de dente',
         'marca' => 'cães e gatos',
         'preco' => 10.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => 'produto-higiene.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
         'descricao' => 'Escova de dente, para cães e gatos'
     ],
-     'produto-higiene' => [
+     'produto-higiene7' => [
         'nome' => 'Rasqueadeira',
         'marca' => 'cães e gatos',
         'preco' => 25.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => 'produto-higiene.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
         'descricao' => 'Rasqueadeira pra cães e gatos'
     ],
-    'brinquedo-pet' => [
+     'brinquedo-pet1' => [
         'nome' => 'Bolinha',
         'marca' => 'Dog Balls',
         'preco' => 5.00,
         'tipo' => 'brinquedos',
         'categorias' => 'brinquedos caes',
-        'imagem' => 'produto-brinquedo.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
         'descricao' => 'Bolinha Dog Balls'
     ],
-     'brinquedo-pet' => [
+     'brinquedo-pet2' => [
         'nome' => 'Pelúcia',
         'marca' => ' cachorro',
         'preco' => 30.00,
         'tipo' => 'brinquedos',
         'categorias' => 'brinquedos caes',
-        'imagem' => 'produto-brinquedo.png',
+        'imagem' => '../images/',
         'imagens_extras' => [],
-        'descricao' => 'Brinquedo para cachorro'
+        'descricao' => 'Pelúcia para cachorro'
     ],
-     'brinquedo-pet' => [
-        'nome' => 'Pelúcia',
-        'marca' => ' cachorro',
-        'preco' => 25.00,
+
+     'brinquedo-pet3' => [
+        'nome' => 'arranhador para gatos',
+        'marca' => 'gato',
+        'preco' => 120.00,
         'tipo' => 'brinquedos',
-        'categorias' => 'brinquedos caes',
-        'imagem' => 'produto-brinquedo.png',
+        'categorias' => 'brinquedos gato',
+        'imagem' => '../images/',
         'imagens_extras' => [],
-        'descricao' => 'Brinquedo para cachorro'
+        'descricao' => 'arranhador pra gato'
     ],
-     'casinha-pet' => [
+     'brinquedo-pet4' => [
+        'nome' => 'Torre de Bolinhas Interativa para Gatos',
+        'marca' => 'gato',
+        'preco' => 40.00,
+        'tipo' => 'brinquedos',
+        'categorias' => 'brinquedos gato',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Torre de Bolinhas Interativa pra gato'
+    ],
+     'casinha-pet1' => [
         'nome' => 'Casinha',
-        'marca' => 'Grande porte',
+        'marca' => 'cachorro Grande porte',
         'preco' => 130.00,
         'tipo' => 'casinha',
         'categorias' => 'casinha caes',
@@ -169,9 +222,9 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Casinha para cães e gatos de grande porte'
     ],
-     'casinha-pet' => [
+     'casinha-pet2' => [
         'nome' => 'Casinha',
-        'marca' => 'Pequeno porte',
+        'marca' => 'cachorro Pequeno porte',
         'preco' => 90.00,
         'tipo' => 'casinha',
         'categorias' => 'casinha caes',
@@ -179,9 +232,9 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Casinha para cães e gatos de pequeno porte'
     ],
-    'casinha-pet' => [
+     'casinha-pet3' => [
         'nome' => 'caminha',
-        'marca' => 'cachorro',
+        'marca' => 'gato',
         'preco' => 95.00,
         'tipo' => 'casinha',
         'categorias' => 'casinha caes',
@@ -189,7 +242,7 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Caminha para cachorro'
     ],
-     'casinha-pet' => [
+     'casinha-pet4' => [
         'nome' => 'caminha',
         'marca' => 'gato',
         'preco' => 90.00,
@@ -199,9 +252,9 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Caminha para gatos'
     ],
-    'acessorio-pet' => [
+     'acessorio-pet1' => [
         'nome' => 'Roupa',
-        'marca' => 'Pequeno porte',
+        'marca' => 'Cachorro Pequeno porte',
         'preco' => 55.00,
         'tipo' => 'acessorios',
         'categorias' => 'acessorios caes',
@@ -209,32 +262,37 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Roupa para cães de pequeno porte'
     ],
-'acessorio-pet' => [
+     'acessorio-pet2' => [
         'nome' => 'Roupa',
-        'marca' => 'Pequeno porte',
-        'preco' => 55.00,
+        'marca' => 'Cachorro Grande porte',
+        'preco' => 70.00,
         'tipo' => 'acessorios',
         'categorias' => 'acessorios caes',
         'imagem' => 'produto-acessorio.png',
         'imagens_extras' => [],
-        'descricao' => 'Roupa para cães de pequeno porte'
+        'descricao' => 'Roupa pra cães de grande porte'
     ],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    'acessorio-pet' => [
+     'acessorio-pet3' => [
+        'nome' => 'Roupa',
+        'marca' => 'Gato Pequeno porte',
+        'preco' => 50.00,
+        'tipo' => 'acessorios',
+        'categorias' => 'acessorios gato',
+        'imagem' => 'produto-acessorio.png',
+        'imagens_extras' => [],
+        'descricao' => 'Roupa para gatos de pequeno porte'
+    ],
+     'acessorio-pet4' => [
+        'nome' => 'Roupa',
+        'marca' => 'Gato Grande porte',
+        'preco' => 60.00,
+        'tipo' => 'acessorios',
+        'categorias' => 'acessorios gato',
+        'imagem' => 'produto-acessorio.png',
+        'imagens_extras' => [],
+        'descricao' => 'Roupa pra gatos de grande porte'
+    ],
+     'acessorio-pet5' => [
         'nome' => 'Roupa',
         'marca' => 'Grande porte',
         'preco' => 70.00,
@@ -244,4 +302,47 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Roupa pra cães de grande porte'
     ],
+
+
+     "NOSSOS PRODUTOS"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
