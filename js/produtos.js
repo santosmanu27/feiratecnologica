@@ -1,3 +1,4 @@
+
 (() => {
     const lista = document.querySelector('#produtos-lista');
     const cards = [...document.querySelectorAll('.produto-card')];
@@ -7,51 +8,62 @@
     const busca = document.querySelector('#busca');
     const semProdutos = document.querySelector('#sem-produtos');
 
+    if (!lista || !ordenar || !busca || !semProdutos) return;
+
     const parametros = new URLSearchParams(window.location.search);
 
-    const categoriasValidas = [
-        'caes',
-        'gatos',
-        'higiene',
-        'brinquedos',
-        'acessorios',
-        'nossos produtos'
-    ];
+    function normalizar(valor) {
+        return (valor || '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase()
+            .trim();
+    }
+
+    function normalizarCategoria(valor) {
+        const categoria = normalizar(valor);
+
+        if (categoria === 'gato') return 'gatos';
+        if (categoria === 'cao') return 'caes';
+
+        return categoria;
+    }
 
     let tipoAtual = 'todos';
-    let categoriaAtual = parametros.get('categoria') || '';
-
-    if (!categoriasValidas.includes(categoriaAtual)) {
-        categoriaAtual = '';
-    }
+    let categoriaAtual = normalizarCategoria(parametros.get('categoria'));
 
     busca.value = parametros.get('busca') || '';
 
     function atualizarProdutos() {
-        const termo = busca.value.trim().toLocaleLowerCase('pt-BR');
+        const termo = normalizar(busca.value);
         let quantidadeVisivel = 0;
 
-        botoesTipo.forEach((botao) => {
+        botoesTipo.forEach(botao => {
             botao.classList.toggle(
                 'ativo',
                 botao.dataset.tipo === tipoAtual
             );
         });
 
-        botoesCategoria.forEach((botao) => {
+        botoesCategoria.forEach(botao => {
             botao.classList.toggle(
                 'ativa',
-                botao.dataset.categoria === categoriaAtual
+                normalizarCategoria(botao.dataset.categoria) === categoriaAtual
             );
         });
 
-        cards.forEach((card) => {
-            const nome = card.dataset.nome.toLocaleLowerCase('pt-BR');
-            const marca = card.dataset.marca.toLocaleLowerCase('pt-BR');
-            const categorias = card.dataset.categorias.split(' ');
+        cards.forEach(card => {
+            const nome = normalizar(card.dataset.nome);
+            const marca = normalizar(card.dataset.marca);
+            const tipo = normalizar(card.dataset.tipo);
+
+            const categorias = normalizar(card.dataset.categorias)
+                .split(/\s+/)
+                .filter(Boolean)
+                .map(normalizarCategoria);
 
             const correspondeTipo =
-                tipoAtual === 'todos' || card.dataset.tipo === tipoAtual;
+                tipoAtual === 'todos' || tipo === normalizar(tipoAtual);
 
             const correspondeCategoria =
                 !categoriaAtual || categorias.includes(categoriaAtual);
@@ -66,45 +78,46 @@
 
             card.hidden = !visivel;
 
-            if (visivel) {
-                quantidadeVisivel++;
-            }
+            if (visivel) quantidadeVisivel++;
         });
 
-        cards.sort((a, b) => {
+        const cardsOrdenados = [...cards].sort((a, b) => {
+            const precoA = Number(a.dataset.preco);
+            const precoB = Number(b.dataset.preco);
+
             if (ordenar.value === 'menor-preco') {
-                return Number(a.dataset.preco) - Number(b.dataset.preco);
+                return precoA - precoB;
             }
 
             if (ordenar.value === 'maior-preco') {
-                return Number(b.dataset.preco) - Number(a.dataset.preco);
+                return precoB - precoA;
             }
 
-            return a.dataset.nome.localeCompare(b.dataset.nome, 'pt-BR');
+            return normalizar(a.dataset.nome).localeCompare(
+                normalizar(b.dataset.nome),
+                'pt-BR'
+            );
         });
 
-        cards.forEach((card) => lista.appendChild(card));
+        cardsOrdenados.forEach(card => lista.appendChild(card));
 
         semProdutos.hidden = quantidadeVisivel > 0;
     }
 
-    botoesTipo.forEach((botao) => {
+    botoesTipo.forEach(botao => {
         botao.addEventListener('click', () => {
             tipoAtual = botao.dataset.tipo;
-
-            if (tipoAtual === 'todos') {
-                categoriaAtual = '';
-                busca.value = '';
-            }
-
             atualizarProdutos();
         });
     });
 
-    botoesCategoria.forEach((botao) => {
+    botoesCategoria.forEach(botao => {
         botao.addEventListener('click', () => {
-            categoriaAtual = botao.dataset.categoria;
-            tipoAtual = 'todos';
+            const categoria = normalizarCategoria(botao.dataset.categoria);
+
+            categoriaAtual =
+                categoriaAtual === categoria ? '' : categoria;
+
             atualizarProdutos();
         });
     });

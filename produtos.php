@@ -67,6 +67,10 @@ function escapar($valor) {
                         Ração
                     </button>
 
+                    <button type="button" class="filtro" data-tipo="petiscos">
+                        Petiscos
+                    </button>
+
                     <button type="button" class="filtro" data-tipo="brinquedos">
                         Brinquedos
                     </button>
