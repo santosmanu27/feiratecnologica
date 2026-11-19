@@ -88,7 +88,7 @@ $produtos = [
         'categorias' => 'gatos',
         'imagem' => '../images/Golden gatos.jpeg',
         'imagens_extras' => [],
-        'descricao' => 'Ração GoldeN, 10kg, para gatos adulto, sabor carne'
+        'descricao' => 'Ração GoldeN, 10kg, para gatos adultos, sabor carne'
     ],
 
     'racao-gato8' => [
@@ -97,7 +97,7 @@ $produtos = [
         'preco' => 170.00,
         'tipo' => 'racao',
         'categorias' => 'gatos',
-        'imagem' => '../images/Golden gatos.jpeg',
+        'imagem' => 'images/racaogato.jpg',
         'imagens_extras' => [],
         'descricao' => 'Ração GoldeN, 10kg, para gatos castrados, sabor salmão'
     ],
@@ -108,7 +108,7 @@ $produtos = [
         'preco' => 130.00,
         'tipo' => 'racao',
         'categorias' => 'gatos',
-        'imagem' => '',
+        'imagem' => 'images/racaogatocarne.jpg',
         'imagens_extras' => [],
         'descricao' => 'Ração Special Cad, 15kg, para gatos adultos, sabor carne'
     ],
@@ -119,7 +119,7 @@ $produtos = [
         'preco' => 20.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => '',
+        'imagem' => 'images/shampoosanol.jpg',
         'imagens_extras' => [],
         'descricao' => 'Shampoo Sanol dog, 500ml, para cachorro pelos escuro'
     ],
@@ -130,7 +130,7 @@ $produtos = [
         'preco' => 30.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => '',
+        'imagem' => 'images/shampoosanolgato.jpg',
         'imagens_extras' => [],
         'descricao' => 'Shampoo Sanol dog, 500ml, para cães e gatos de pele sensível'
     ],
@@ -141,7 +141,7 @@ $produtos = [
         'preco' => 20.00,
         'tipo' => 'higiene',
         'categorias' => 'higiene caes gatos',
-        'imagem' => '',
+        'imagem' => 'images/condicionadorsanol.jpg',
         'imagens_extras' => [],
         'descricao' => 'Condicionador Sanol dog, 500ml, para cães e gatos, neutro'
     ],
