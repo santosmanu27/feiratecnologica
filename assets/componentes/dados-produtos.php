@@ -262,7 +262,7 @@ $produtos = [
         'preco' => 95.00,
         'tipo' => 'acessorios',
         'categorias' => 'acessorios caes',
-        'imagem' => '../produto-acessorio.png',
+        'imagem' => '../images/produto-acessorio.png',
         'imagens_extras' => [],
         'descricao' => 'Caminha para cachorro'
     ],
