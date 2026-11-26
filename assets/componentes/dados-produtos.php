@@ -193,7 +193,8 @@ $produtos = [
     'brinquedo-pet1' => [
         'nome' => 'Mordedor',
         'marca' => 'Dog Balls',
-        'preco' => 45,0,
+        'preco' => 45,
+        0,
         'tipo' => 'brinquedos',
         'categorias' => 'brinquedos caes',
         'imagem' => '../images/jacare.jpg',
@@ -322,5 +323,84 @@ $produtos = [
         'descricao' => 'Roupa pra gatos de grande porte'
     ],
 
-];
+//NOSSOS-PRODUTOS
 
+    'nossos-produtos1' => [
+        'nome' => 'Raçao',
+        'marca' => 'AuraPet',
+        'preco' => 41.90,
+        'tipo' => 'raçao',
+        'categorias' => 'nossos-produtos',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Ração para Pássaros, AuraPet, 5kg'
+    ],
+
+    'nossos-produtos2' => [
+        'nome' => 'Raçao',
+        'marca' => 'AuraPet',
+        'preco' => 91.90,
+        'tipo' => 'raçao',
+        'categorias' => 'nossos-produtos',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Ração Crescimento, AuraPet, 10kg'
+    ],
+
+    'nossos-produtos3' => [
+        'nome' => 'Raçao',
+        'marca' => 'AuraPet',
+        'preco' => 41.90,
+        'tipo' => 'raçao',
+        'categorias' => 'nossos-produtos',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Ração Premium Gatos, AuraPet, 5kg'
+    ],
+
+    'nossos-produtos4' => [
+        'nome' => 'Raçao',
+        'marca' => 'AuraPet',
+        'preco' => 21.90,
+        'tipo' => 'raçao',
+        'categorias' => 'nossos-produtos',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Mix Sementes Aves, AuraPet, 5kg'
+    ],
+
+    'nossos-produtos5' => [
+        'nome' => 'pote',
+        'marca' => 'AuraPet',
+        'preco' => 31.90,
+        'tipo' => 'pote',
+        'categorias' => 'nossos-produtos',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Pote de Ração, AuraPet'
+    ],
+
+    'nossos-produtos5' => [
+        'nome' => 'pote',
+        'marca' => 'AuraPet',
+        'preco' => 29.90,
+        'tipo' => 'pote',
+        'categorias' => 'nossos-produtos',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Pote de Ração, AuraPet'
+    ],
+
+
+    'nossos-produtos5' => [
+        'nome' => 'casinha',
+        'marca' => 'AuraPet',
+        'preco' => 149.90,
+        'tipo' => 'casinha',
+        'categorias' => 'nossos-produtos',
+        'imagem' => '../images/',
+        'imagens_extras' => [],
+        'descricao' => 'Casinha de Cachorro, AuraPet'
+    ],
+
+];

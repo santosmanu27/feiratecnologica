@@ -2,7 +2,8 @@
 require_once 'assets/componentes/sessao.php';
 require 'assets/componentes/dados-produtos.php';
 
-function escapar($valor) {
+function escapar($valor)
+{
     return htmlspecialchars((string) $valor, ENT_QUOTES, 'UTF-8');
 }
 
@@ -38,8 +39,7 @@ function escapar($valor) {
             <img
                 src="assets/images/p2.png"
                 alt=""
-                class="pata-decorativa"
-            >
+                class="pata-decorativa">
 
             <form action="produtos.php" method="get" class="busca-produtos">
                 <input
@@ -47,8 +47,7 @@ function escapar($valor) {
                     id="busca"
                     name="busca"
                     placeholder="Pesquisar produtos ou marcas..."
-                    aria-label="Pesquisar produtos ou marcas"
-                >
+                    aria-label="Pesquisar produtos ou marcas">
 
                 <button type="submit" aria-label="Pesquisar">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -124,7 +123,7 @@ function escapar($valor) {
                         Acessórios
                     </button>
 
-                    <button type="button" class="categoria-filtro" data-categoria="nossos produtos">
+                    <button type="button" class="categoria-filtro" data-categoria="nossos-produtos">
                         <i class="fa-solid fa-paw"></i>
                         Nossos produtos
                     </button>
@@ -139,17 +138,14 @@ function escapar($valor) {
                             data-marca="<?= escapar($produto['marca']) ?>"
                             data-preco="<?= escapar($produto['preco']) ?>"
                             data-tipo="<?= escapar($produto['tipo']) ?>"
-                            data-categorias="<?= escapar($produto['categorias']) ?>"
-                        >
+                            data-categorias="<?= escapar($produto['categorias']) ?>">
                             <a
                                 href="conteudo.php?id=<?= urlencode($id) ?>"
-                                class="produto-link"
-                            >
+                                class="produto-link">
                                 <div class="produto-imagem">
                                     <img
                                         src="assets/images/<?= escapar($produto['imagem']) ?>"
-                                        alt="<?= escapar($produto['nome']) ?>"
-                                    >
+                                        alt="<?= escapar($produto['nome']) ?>">
                                 </div>
 
                                 <h3><?= escapar($produto['nome']) ?></h3>
@@ -161,8 +157,7 @@ function escapar($valor) {
 
                             <a
                                 href="conteudo.php?id=<?= urlencode($id) ?>"
-                                class="btn-carrinho"
-                            >
+                                class="btn-carrinho">
                                 Ver mais
                             </a>
                         </article>
