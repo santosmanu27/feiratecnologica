@@ -331,7 +331,7 @@ $produtos = [
         'preco' => 41.90,
         'tipo' => 'raçao',
         'categorias' => 'nossos-produtos',
-        'imagem' => '../images/',
+        'imagem' => '../images/ração.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Ração para Pássaros, AuraPet, 5kg'
     ],
@@ -342,7 +342,7 @@ $produtos = [
         'preco' => 91.90,
         'tipo' => 'raçao',
         'categorias' => 'nossos-produtos',
-        'imagem' => '../images/',
+        'imagem' => '../images/crescimento.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Ração Crescimento, AuraPet, 10kg'
     ],
@@ -353,7 +353,7 @@ $produtos = [
         'preco' => 41.90,
         'tipo' => 'raçao',
         'categorias' => 'nossos-produtos',
-        'imagem' => '../images/',
+        'imagem' => '../images/premium.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Ração Premium Gatos, AuraPet, 5kg'
     ],
@@ -364,7 +364,7 @@ $produtos = [
         'preco' => 21.90,
         'tipo' => 'raçao',
         'categorias' => 'nossos-produtos',
-        'imagem' => '../images/',
+        'imagem' => '../images/sementes.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Mix Sementes Aves, AuraPet, 5kg'
     ],
@@ -375,7 +375,7 @@ $produtos = [
         'preco' => 31.90,
         'tipo' => 'pote',
         'categorias' => 'nossos-produtos',
-        'imagem' => '../images/',
+        'imagem' => '../images/pote.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Pote de Ração, AuraPet'
     ],
@@ -386,7 +386,7 @@ $produtos = [
         'preco' => 29.90,
         'tipo' => 'pote',
         'categorias' => 'nossos-produtos',
-        'imagem' => '../images/',
+        'imagem' => '../images/potedois.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Pote de Ração, AuraPet'
     ],
@@ -398,7 +398,7 @@ $produtos = [
         'preco' => 149.90,
         'tipo' => 'casinha',
         'categorias' => 'nossos-produtos',
-        'imagem' => '../images/',
+        'imagem' => '../images/casinha.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Casinha de Cachorro, AuraPet'
     ],
