@@ -1,7 +1,7 @@
 <footer class="footer" id="contato">
     <div class="footer-conteudo">
         <div class="footer-marca">
-            <img src="" alt="Manu, coloca uma logo diferente aq pfv">
+            <img src="assets/images/logo.png" alt="">
             <div class="footer-marca-texto">
                 <h2>Aura<span>Pet</span></h2>
                 <p>
