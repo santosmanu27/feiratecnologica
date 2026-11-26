@@ -380,7 +380,7 @@ $produtos = [
         'descricao' => 'Pote de Ração, AuraPet'
     ],
 
-    'nossos-produtos5' => [
+    'nossos-produtos6' => [
         'nome' => 'pote',
         'marca' => 'AuraPet',
         'preco' => 29.90,
@@ -392,7 +392,7 @@ $produtos = [
     ],
 
 
-    'nossos-produtos5' => [
+    'nossos-produtos7' => [
         'nome' => 'casinha',
         'marca' => 'AuraPet',
         'preco' => 149.90,
