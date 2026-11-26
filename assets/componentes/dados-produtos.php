@@ -75,7 +75,7 @@ $produtos = [
         'preco' => 5.50,
         'tipo' => 'petiscos',
         'categorias' => 'gatos',
-        'imagem' => '',
+        'imagem' => '../images/Nuggets.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Petisco Quatree, Snacks, para gatos, sabor salmão'
     ],
@@ -262,7 +262,7 @@ $produtos = [
         'preco' => 95.00,
         'tipo' => 'acessorios',
         'categorias' => 'acessorios caes',
-        'imagem' => '../images/produto-acessorio.png',
+        'imagem' => '../images/cama bege.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Caminha para cachorro'
     ],
@@ -273,7 +273,7 @@ $produtos = [
         'preco' => 90.00,
         'tipo' => 'acessorios',
         'categorias' => 'acessorios gatos',
-        'imagem' => '../images/produto-acessorio.png',
+        'imagem' => '../images/cama azul.jpeg',
         'imagens_extras' => [],
         'descricao' => 'Caminha para gatos'
     ],
@@ -292,7 +292,7 @@ $produtos = [
     'acessorio-pet2' => [
         'nome' => 'Roupa',
         'marca' => 'Cachorro Grande porte',
-        'preco' => 70.00,
+        'preco' => 75.00,
         'tipo' => 'acessorios',
         'categorias' => 'acessorios caes',
         'imagem' => '../images/roupa laranja.jpeg',
@@ -321,17 +321,6 @@ $produtos = [
         'imagens_extras' => [],
         'descricao' => 'Roupa pra gatos de grande porte'
     ],
-
-    'acessorio-pet5' => [
-        'nome' => 'Roupa',
-        'marca' => 'Grande porte',
-        'preco' => 70.00,
-        'tipo' => 'acessorios',
-        'categorias' => 'acessorios caes',
-        'imagem' => '../images/produto-acessorio.png',
-        'imagens_extras' => [],
-        'descricao' => 'Roupa pra cães de grande porte'
-    ]
 
 ];
 
